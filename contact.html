@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Fira+Sans:wght@300&family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+  <!-- This is the Navbar Section -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tour.html">Tour</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+  </ul>
+  </nav>
+
+<!-- This is the contact form section -->
+
+ <div class="contact">
+  <h2>Please do not hesitate to contact us</h2>
+  <div class="contact-box">
+    <h2>Sent us a message: </h2>
+    <form id="contact-form" action="#" method="POST">
+      <div class="form-group">
+          <label for="name">Full Name:</label>
+          <input type="text" id="name" name="name" required minlength="2">
+      </div>
+      <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+      </div>
+      <div class="form-group">
+          <label for="subject">Subject:</label>
+          <select id="subject" name="subject" required>
+              <option value="">Please select a subject</option>
+              <option value="general">General Inquiry</option>
+              <option value="support">Technical Support</option>
+              <option value="billing">Billing Question</option>
+          </select>
+      </div>
+      <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required minlength="10"></textarea>
+      </div>
+      <div class="form-group">
+          <label for="newsletter">
+              <input type="checkbox" id="newsletter" name="newsletter">
+              Subscribe to our newsletter
+          </label>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+ </div>
+
+   <!-- This is the footer sections -->
+   <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 Elegant Yachting Tour. All rights reserved</p>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tour.html">Tour</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+     </ul>
+      <p class="footer-social">
+        <a href="https://www.facebook.com/page/elegantyatching"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/elegantyatching"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.twitter.com/elegantyatching"><i class="fab fa-twitter"></i></a>
+    </p>
+    </div>
+  </footer>
+
+</body>
+</html>
